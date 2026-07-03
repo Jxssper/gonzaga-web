@@ -52,9 +52,23 @@ gsap.to('.hero [data-reveal]', {
 // Mobile menu toggle
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
+const navOverlay = document.getElementById('navOverlay');
+
+function closeMenu() {
+  nav.classList.remove('open');
+  burger.classList.remove('open');
+  navOverlay.classList.remove('open');
+}
+
 if (burger) {
   burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    const isOpen = nav.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+    navOverlay.classList.toggle('open', isOpen);
+  });
+  navOverlay.addEventListener('click', closeMenu);
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
   });
 }
 

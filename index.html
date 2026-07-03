@@ -25,6 +25,7 @@
       <span></span><span></span><span></span>
     </button>
   </div>
+  <div class="nav-overlay" id="navOverlay"></div>
 </header>
 
 <main>
@@ -76,24 +77,26 @@
     <p class="brands__label container">Empresas que confían en nosotros</p>
     <div class="brands__track">
       <div class="brands__group">
-        <img src="assets/logo-nativa.png" alt="Nativa" />
-        <img src="assets/logo-kuskalla.png" alt="Kuskalla" />
-        <img src="assets/logo-continental.png" alt="Continental" />
-        <img src="assets/logo-waw.png" alt="WAW" />
-        <img src="assets/logo-alpacaterra.png" alt="Alpacaterra" />
-        <img src="assets/logo-ayllu.jpg" alt="Ayllu" />
-        <img src="assets/logo-monasterio.jpg" alt="Monasterio" />
-        <img src="assets/logo-lux.png" alt="LUX" />
+        <span class="logo-chip"><img src="assets/logo-nativa.png" alt="Nativa" /></span>
+        <span class="logo-chip"><img src="assets/logo-kuskalla.png" alt="Kuskalla" /></span>
+        <span class="logo-chip"><img src="assets/logo-continental.png" alt="Continental" /></span>
+        <span class="logo-chip"><img src="assets/logo-waw.png" alt="WAW" /></span>
+        <span class="logo-chip"><img src="assets/logo-alpacaterra.png" alt="Alpacaterra" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-ayllu.jpg" alt="Ayllu" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-monasterio.jpg" alt="Monasterio" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-lux.png" alt="LUX" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-final-blanco.jpg" alt="MayTu" /></span>
       </div>
       <div class="brands__group" aria-hidden="true">
-        <img src="assets/logo-nativa.png" alt="" />
-        <img src="assets/logo-kuskalla.png" alt="" />
-        <img src="assets/logo-continental.png" alt="" />
-        <img src="assets/logo-waw.png" alt="" />
-        <img src="assets/logo-alpacaterra.png" alt="" />
-        <img src="assets/logo-ayllu.jpg" alt="" />
-        <img src="assets/logo-monasterio.jpg" alt="" />
-        <img src="assets/logo-lux.png" alt="" />
+        <span class="logo-chip"><img src="assets/logo-nativa.png" alt="" /></span>
+        <span class="logo-chip"><img src="assets/logo-kuskalla.png" alt="" /></span>
+        <span class="logo-chip"><img src="assets/logo-continental.png" alt="" /></span>
+        <span class="logo-chip"><img src="assets/logo-waw.png" alt="" /></span>
+        <span class="logo-chip"><img src="assets/logo-alpacaterra.png" alt="" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-ayllu.jpg" alt="" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-monasterio.jpg" alt="" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-lux.png" alt="" /></span>
+        <span class="logo-chip logo-chip--plain"><img src="assets/logo-final-blanco.jpg" alt="" /></span>
       </div>
     </div>
   </section>
@@ -130,30 +133,93 @@
 
       <div class="services__list">
         <article class="service" data-reveal>
-          <span class="service__num">01</span>
-          <h3>Proyectos con tecnologías inmersivas</h3>
-          <p>Realidad aumentada aplicada a espejos probadores, menús de restaurantes, eventos y accesorios.</p>
+          <div class="service__head">
+            <span class="service__num">01</span>
+            <h3>Proyectos con tecnologías inmersivas</h3>
+          </div>
+          <div class="service__body">
+            <p>Realidad aumentada aplicada a espejos probadores, menús de restaurantes, eventos y accesorios.</p>
+            <img class="service__img" src="assets/service-1.jpg" alt="" loading="lazy">
+          </div>
         </article>
         <article class="service" data-reveal>
-          <span class="service__num">02</span>
-          <h3>Gestión y mejora de procesos</h3>
-          <p>Optimización de flujos productivos y operativos para negocios de manufactura y servicios.</p>
+          <div class="service__head">
+            <span class="service__num">02</span>
+            <h3>Gestión y mejora de procesos</h3>
+          </div>
+          <div class="service__body">
+            <p>Optimización de flujos productivos y operativos para negocios de manufactura y servicios.</p>
+            <img class="service__img" src="assets/service-2.jpg" alt="" loading="lazy">
+          </div>
         </article>
         <article class="service" data-reveal>
-          <span class="service__num">03</span>
-          <h3>Marketing digital</h3>
-          <p>Estrategias de posicionamiento y contenido para captar y fidelizar clientes.</p>
+          <div class="service__head">
+            <span class="service__num">03</span>
+            <h3>Marketing digital</h3>
+          </div>
+          <div class="service__body">
+            <p>Estrategias de posicionamiento y contenido para captar y fidelizar clientes.</p>
+            <img class="service__img" src="assets/service-3.jpg" alt="" loading="lazy">
+          </div>
         </article>
         <article class="service" data-reveal>
-          <span class="service__num">04</span>
-          <h3>Transformación digital</h3>
-          <p>Sistemas y ERP a medida que digitalizan la operación de tu empresa de punta a punta.</p>
+          <div class="service__head">
+            <span class="service__num">04</span>
+            <h3>Transformación digital</h3>
+          </div>
+          <div class="service__body">
+            <p>Sistemas y ERP a medida que digitalizan la operación de tu empresa de punta a punta.</p>
+            <img class="service__img" src="assets/service-4.jpg" alt="" loading="lazy">
+          </div>
         </article>
         <article class="service" data-reveal>
-          <span class="service__num">05</span>
-          <h3>Innovación tecnológica</h3>
-          <p>Proyectos de investigación aplicada, en alianza con universidades y publicaciones científicas.</p>
+          <div class="service__head">
+            <span class="service__num">05</span>
+            <h3>Innovación tecnológica</h3>
+          </div>
+          <div class="service__body">
+            <p>Proyectos de investigación aplicada, en alianza con universidades y publicaciones científicas.</p>
+            <img class="service__img" src="assets/service-5.jpg" alt="" loading="lazy">
+          </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS RA -->
+  <section class="ar-projects" id="proyectos">
+    <div class="container">
+      <p class="eyebrow" data-reveal>// Proyectos</p>
+      <h2 class="section-title" data-reveal>Realidad aumentada en acción</h2>
+      <div class="ar-grid">
+        <div class="ar-card" data-reveal>
+          <div class="ar-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="10" width="36" height="26" rx="3"/><path d="M6 30l10-8 8 6 8-10 10 8"/></svg>
+          </div>
+          <h3>Espejos probadores</h3>
+          <p>Prueba virtual de prendas en tiempo real, sin cambiarte de ropa.</p>
+        </div>
+        <div class="ar-card" data-reveal>
+          <div class="ar-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="6" width="28" height="36" rx="4"/><path d="M17 16h14M17 23h14M17 30h8"/></svg>
+          </div>
+          <h3>Menús de restaurantes</h3>
+          <p>Platos en 3D sobre la mesa antes de pedir, mejorando la decisión del cliente.</p>
+        </div>
+        <div class="ar-card" data-reveal>
+          <div class="ar-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="16"/><path d="M24 16v8l6 4"/></svg>
+          </div>
+          <h3>Eventos</h3>
+          <p>Experiencias inmersivas e interactivas para activaciones de marca en vivo.</p>
+        </div>
+        <div class="ar-card" data-reveal>
+          <div class="ar-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6l16 8v20l-16 8-16-8V14z"/><path d="M8 14l16 8 16-8M24 22v20"/></svg>
+          </div>
+          <h3>Accesorios</h3>
+          <p>Visualización virtual de joyas, lentes y accesorios antes de comprarlos.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -166,11 +232,17 @@
       <div class="areas__grid">
         <div class="area-card" data-reveal>
           <h3>Realidad aumentada</h3>
-          <p>Espejos probadores, menús interactivos, eventos y accesorios en RA.</p>
+          <div class="area-card__body">
+            <p>Espejos probadores, menús interactivos, eventos y accesorios en RA.</p>
+            <img class="area-card__img" src="assets/area-1.jpg" alt="" loading="lazy">
+          </div>
         </div>
         <div class="area-card" data-reveal>
           <h3>Sistemas</h3>
-          <p>Desarrollo de ERP y plataformas a medida para tu operación.</p>
+          <div class="area-card__body">
+            <p>Desarrollo de ERP y plataformas a medida para tu operación.</p>
+            <img class="area-card__img" src="assets/area-2.jpg" alt="" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
@@ -209,7 +281,7 @@
 </footer>
 
 <a href="https://wa.me/51932533500?text=Hola%2C%20quiero%20más%20información" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Escríbenos por WhatsApp">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+  <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" aria-hidden="true">
     <path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.23.62 4.32 1.7 6.1L4 29l8.06-1.66a11.94 11.94 0 0 0 3.96.68C22.6 28.02 28 22.62 28 16.02 28 9.4 22.6 3 16.02 3zm0 21.6c-1.32 0-2.6-.28-3.78-.83l-.27-.13-4.78.99.98-4.67-.17-.28a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.46-9.44 5.2 0 9.44 4.24 9.44 9.44 0 5.2-4.24 9.44-9.44 9.44zm5.2-7.06c-.28-.14-1.68-.83-1.94-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.75-1.4-1.67-1.57-1.95-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.55-.88-2.13-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.35-.26.28-1 .98-1 2.39s1.02 2.77 1.17 2.96c.14.19 2 3.05 4.84 4.28.68.29 1.2.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.68-.68 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33z"/>
   </svg>
 </a>
