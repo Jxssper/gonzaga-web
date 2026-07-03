@@ -21,6 +21,24 @@ document.querySelectorAll('[data-reveal]').forEach((el) => {
   });
 });
 
+// Animated stat counters
+document.querySelectorAll('[data-count]').forEach((el) => {
+  const target = parseInt(el.getAttribute('data-count'), 10);
+  ScrollTrigger.create({
+    trigger: el,
+    start: 'top 90%',
+    once: true,
+    onEnter: () => {
+      gsap.to(el, {
+        innerText: target,
+        duration: 1.4,
+        ease: 'power1.out',
+        snap: { innerText: 1 }
+      });
+    }
+  });
+});
+
 // Hero entrance on load
 gsap.to('.hero [data-reveal]', {
   opacity: 1,
@@ -39,3 +57,12 @@ if (burger) {
     nav.classList.toggle('open');
   });
 }
+
+// Back to top button
+const totop = document.getElementById('totop');
+window.addEventListener('scroll', () => {
+  totop.classList.toggle('visible', window.scrollY > 600);
+});
+totop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
